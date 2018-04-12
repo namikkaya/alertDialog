@@ -14,7 +14,6 @@
 		4D3A4A78207D00C5000B9336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3A4A76207D00C5000B9336 /* LaunchScreen.storyboard */; };
 		4D3A4A83207D00C5000B9336 /* alertDialogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4A82207D00C5000B9336 /* alertDialogTests.swift */; };
 		4D3A4A8E207D00C5000B9336 /* alertDialogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4A8D207D00C5000B9336 /* alertDialogUITests.swift */; };
-		4D3A4A9C207D1468000B9336 /* controllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4A9B207D1468000B9336 /* controllerViewController.swift */; };
 		4D3A4AA1207D257F000B9336 /* informationDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4AA0207D257F000B9336 /* informationDialog.swift */; };
 		4D3A4AA3207D2AB8000B9336 /* alertTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4AA2207D2AB8000B9336 /* alertTransition.swift */; };
 		4D3A4AA5207D7C58000B9336 /* bscButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4AA4207D7C58000B9336 /* bscButton.swift */; };
@@ -51,7 +50,6 @@
 		4D3A4A89207D00C5000B9336 /* alertDialogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alertDialogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3A4A8D207D00C5000B9336 /* alertDialogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertDialogUITests.swift; sourceTree = "<group>"; };
 		4D3A4A8F207D00C5000B9336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D3A4A9B207D1468000B9336 /* controllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controllerViewController.swift; sourceTree = "<group>"; };
 		4D3A4AA0207D257F000B9336 /* informationDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationDialog.swift; sourceTree = "<group>"; };
 		4D3A4AA2207D2AB8000B9336 /* alertTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertTransition.swift; sourceTree = "<group>"; };
 		4D3A4AA4207D7C58000B9336 /* bscButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bscButton.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 				4D3A4A74207D00C5000B9336 /* Assets.xcassets */,
 				4D3A4A76207D00C5000B9336 /* LaunchScreen.storyboard */,
 				4D3A4A79207D00C5000B9336 /* Info.plist */,
-				4D3A4A9B207D1468000B9336 /* controllerViewController.swift */,
 			);
 			path = alertDialog;
 			sourceTree = "<group>";
@@ -277,7 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D3A4AA3207D2AB8000B9336 /* alertTransition.swift in Sources */,
-				4D3A4A9C207D1468000B9336 /* controllerViewController.swift in Sources */,
 				4D3A4AA5207D7C58000B9336 /* bscButton.swift in Sources */,
 				4D3A4AA1207D257F000B9336 /* informationDialog.swift in Sources */,
 				4D3A4A70207D00C3000B9336 /* ViewController.swift in Sources */,
