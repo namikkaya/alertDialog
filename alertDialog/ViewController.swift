@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         dialog.dialogTitleColor = UIColor.white
         dialog.dialogTitle = "Yeni Başlık!"
         dialog.dialogCommentColor = UIColor.white
-        dialog.dialogComment = "Hatalı bağlantı var veya problemli sensin lan göt ne biçim götsün lan sen!"
+        dialog.dialogComment = "Scarlett Johansson daş gibi daş. Çirkin diyen daşa döner."
         
         dialog.PositiveButton(title: "OK",
                               bg_normal: UIColor.darkGray,
