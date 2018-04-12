@@ -197,7 +197,8 @@ class informationDialog: UIViewController {
         
         bButton.topAnchor.constraint(equalTo: commentText.bottomAnchor, constant: 32).isActive = true
         bButton.widthAnchor.constraint(equalTo: dialogView.widthAnchor, constant: -64).isActive = true
-        bButton.heightAnchor.constraint(equalToConstant: 55).isActive = true
+        //bButton.widthAnchor.constraint(equalToConstant: 120).isActive = true
+        bButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
         bButton.centerXAnchor.constraint(equalTo: dialogView.centerXAnchor, constant: 0).isActive = true
         
         dialogView.bottomAnchor.constraint(equalTo: bButton.bottomAnchor, constant: 16).isActive = true

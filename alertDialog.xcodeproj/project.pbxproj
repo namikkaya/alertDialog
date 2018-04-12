@@ -17,6 +17,7 @@
 		4D3A4AA1207D257F000B9336 /* informationDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4AA0207D257F000B9336 /* informationDialog.swift */; };
 		4D3A4AA3207D2AB8000B9336 /* alertTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4AA2207D2AB8000B9336 /* alertTransition.swift */; };
 		4D3A4AA5207D7C58000B9336 /* bscButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4AA4207D7C58000B9336 /* bscButton.swift */; };
+		4D9FB420207FD1B4004AFCE1 /* optionDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9FB41F207FD1B4004AFCE1 /* optionDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4D3A4AA0207D257F000B9336 /* informationDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationDialog.swift; sourceTree = "<group>"; };
 		4D3A4AA2207D2AB8000B9336 /* alertTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertTransition.swift; sourceTree = "<group>"; };
 		4D3A4AA4207D7C58000B9336 /* bscButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bscButton.swift; sourceTree = "<group>"; };
+		4D9FB41F207FD1B4004AFCE1 /* optionDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				4D3A4AA4207D7C58000B9336 /* bscButton.swift */,
 				4D3A4AA2207D2AB8000B9336 /* alertTransition.swift */,
 				4D3A4AA0207D257F000B9336 /* informationDialog.swift */,
+				4D9FB41F207FD1B4004AFCE1 /* optionDialog.swift */,
 			);
 			path = alertGroup;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				4D3A4AA5207D7C58000B9336 /* bscButton.swift in Sources */,
 				4D3A4AA1207D257F000B9336 /* informationDialog.swift in Sources */,
 				4D3A4A70207D00C3000B9336 /* ViewController.swift in Sources */,
+				4D9FB420207FD1B4004AFCE1 /* optionDialog.swift in Sources */,
 				4D3A4A6E207D00C3000B9336 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

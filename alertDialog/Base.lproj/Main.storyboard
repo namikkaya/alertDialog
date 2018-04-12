@@ -25,10 +25,19 @@
                                     <action selector="informationButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDF-04-J4R"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcu-KD-U9e">
+                                <rect key="frame" x="141" y="170" width="92" height="30"/>
+                                <state key="normal" title="dialog Option"/>
+                                <connections>
+                                    <action selector="openOptionDialog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mex-27-1gv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bbY-wL-ciT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="Y8K-cF-Cy6"/>
+                            <constraint firstItem="pcu-KD-U9e" firstAttribute="top" secondItem="bbY-wL-ciT" secondAttribute="bottom" constant="68" id="biR-pV-CdP"/>
+                            <constraint firstItem="pcu-KD-U9e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h9B-aT-nAv"/>
                             <constraint firstItem="bbY-wL-ciT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sdL-2f-fJo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

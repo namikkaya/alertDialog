@@ -98,27 +98,6 @@ class bscButton: UIButton {
         return inside;
     }
     
-    /*
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("touchesBegan")
-        self.isHighlighted = true
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.isHighlighted = false
-        
-        super.touchesEnded(touches, with: event)
-        
-        let touch: UITouch = touches.first as! UITouch
-        
-        if (touch.view == self){
-            print("touchesEnded | This is an ImageView")
-        }else{
-            print("touchesended | This is not an ImageView")
-        }
-    }*/
-    
-    
     func setup(){
         self.backgroundColor = normalBackgroundColor
         self.contentEdgeInsets.bottom = 10
