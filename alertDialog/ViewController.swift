@@ -9,17 +9,47 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let transitionManager = alertTransition()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
     }
-
+    
+    @IBAction func informationButtonAction(_ sender: Any) {
+       openInformationDialog()
+        
+    }
+    
+    func openInformationDialog(){
+        let dialog = informationDialog()
+        dialog.delegate = self
+        dialog.dialogCorner = 10
+        dialog.dialogBackgroundColor = UIColor.black
+        dialog.dialogTitleColor = UIColor.white
+        dialog.dialogTitle = "Yeni Başlık!"
+        dialog.dialogCommentColor = UIColor.white
+        dialog.dialogComment = "Hatalı bağlantı var veya problemli sensin lan göt ne biçim götsün lan sen!"
+        
+        dialog.PositiveButton(title: "OK",
+                              bg_normal: UIColor.darkGray,
+                              bg_highligthed: UIColor.lightGray,
+                              textColor_normal: UIColor.white,
+                              textColor_highligthed: UIColor.black) {
+            
+            print("dialog button work !")
+        }
+        
+        dialog.modalPresentationStyle = .overFullScreen
+        dialog.transitioningDelegate = transitionManager
+        self.present(dialog, animated: true, completion: nil)
+    }
+    
 
 }
 
