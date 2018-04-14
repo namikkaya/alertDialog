@@ -9,9 +9,11 @@
 import UIKit
 
 
-class informationDialog: UIViewController {
+class informationDialog: UIViewController, UIGestureRecognizerDelegate {
     weak var delegate:UIViewController?
     var buttonHandler:CompletionHandler?
+    /// background click close
+    var backgroundClickable:Bool = true
     
     /// Dialog window corner Radius
     var dialogCorner:CGFloat = 0 {
@@ -158,6 +160,12 @@ class informationDialog: UIViewController {
         
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         
+        if backgroundClickable {
+            let gesture = UITapGestureRecognizer(target: self, action:  #selector (self.backgroundClick (_:)))
+            self.view.addGestureRecognizer(gesture)
+            gesture.delegate = self
+        }
+        
         self.view.addSubview(dialogView)
         dialogView.addSubview(titleText)
         dialogView.addSubview(commentText)
@@ -197,14 +205,20 @@ class informationDialog: UIViewController {
         
         bButton.topAnchor.constraint(equalTo: commentText.bottomAnchor, constant: 32).isActive = true
         bButton.widthAnchor.constraint(equalTo: dialogView.widthAnchor, constant: -64).isActive = true
-        //bButton.widthAnchor.constraint(equalToConstant: 120).isActive = true
         bButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
         bButton.centerXAnchor.constraint(equalTo: dialogView.centerXAnchor, constant: 0).isActive = true
         
         dialogView.bottomAnchor.constraint(equalTo: bButton.bottomAnchor, constant: 16).isActive = true
     }
     
-    
+    @objc func backgroundClick(_ sender:UITapGestureRecognizer){
+        UIView.animate(withDuration: 0.1, animations: {
+            self.dialogView.frame.origin.y += 20
+            self.dialogView.alpha = 0
+        }) { (true) in
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
     
     
     @objc func actionWithParam(sender: UIButton){

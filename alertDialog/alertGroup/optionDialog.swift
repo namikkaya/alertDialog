@@ -5,13 +5,16 @@
 //  Created by namik kaya on 12.04.2018.
 //  Copyright © 2018 namik kaya. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
-class optionDialog: UIViewController {
+class optionDialog: UIViewController, UIGestureRecognizerDelegate {
     weak var delegate:UIViewController?
     
     private var buttonStatus:String = "left"
+    
+    /// background click close
+    var backgroundClickable:Bool = true
     
     /// Dialog window corner Radius
     var dialogCorner:CGFloat = 0 {
@@ -171,7 +174,6 @@ class optionDialog: UIViewController {
     }
     
     
-    
     // left Button Click Handler
     typealias leftButtonHandler = () -> Void
     var leftHandler:leftButtonHandler?
@@ -210,6 +212,8 @@ class optionDialog: UIViewController {
         rightButtonBackground_highlighted = bg_highligthed
     }
     
+    
+    
     private func close(){
         self.dismiss(animated: true) {
             
@@ -230,6 +234,12 @@ class optionDialog: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        
+        if backgroundClickable {
+            let gesture = UITapGestureRecognizer(target: self, action:  #selector (self.backgroundClick (_:)))
+            self.view.addGestureRecognizer(gesture)
+            gesture.delegate = self
+        }
         
         self.view.addSubview(dialogView)
         dialogView.addSubview(titleText)
@@ -314,6 +324,15 @@ class optionDialog: UIViewController {
             self.dialogView.alpha = 1
             self.dialogView.frame.origin.y -= 20
             self.dialogView.layoutIfNeeded()
+        }
+    }
+    
+    @objc func backgroundClick(_ sender:UITapGestureRecognizer){
+        UIView.animate(withDuration: 0.1, animations: {
+            self.dialogView.frame.origin.y += 20
+            self.dialogView.alpha = 0
+        }) { (true) in
+            self.dismiss(animated: true, completion: nil)
         }
     }
 

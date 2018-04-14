@@ -17,7 +17,10 @@
 		4D3A4AA1207D257F000B9336 /* informationDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4AA0207D257F000B9336 /* informationDialog.swift */; };
 		4D3A4AA3207D2AB8000B9336 /* alertTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4AA2207D2AB8000B9336 /* alertTransition.swift */; };
 		4D3A4AA5207D7C58000B9336 /* bscButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4AA4207D7C58000B9336 /* bscButton.swift */; };
+		4D3A8FA720820A140069D400 /* multiOptionDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A8FA620820A140069D400 /* multiOptionDialog.swift */; };
 		4D9FB420207FD1B4004AFCE1 /* optionDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9FB41F207FD1B4004AFCE1 /* optionDialog.swift */; };
+		4D9FB461208148E3004AFCE1 /* multiOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9FB460208148E3004AFCE1 /* multiOptionButton.swift */; };
+		4D9FB4672081614C004AFCE1 /* multiOptionDialogAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9FB4662081614C004AFCE1 /* multiOptionDialogAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +57,10 @@
 		4D3A4AA0207D257F000B9336 /* informationDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationDialog.swift; sourceTree = "<group>"; };
 		4D3A4AA2207D2AB8000B9336 /* alertTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertTransition.swift; sourceTree = "<group>"; };
 		4D3A4AA4207D7C58000B9336 /* bscButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bscButton.swift; sourceTree = "<group>"; };
+		4D3A8FA620820A140069D400 /* multiOptionDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multiOptionDialog.swift; sourceTree = "<group>"; };
 		4D9FB41F207FD1B4004AFCE1 /* optionDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionDialog.swift; sourceTree = "<group>"; };
+		4D9FB460208148E3004AFCE1 /* multiOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multiOptionButton.swift; sourceTree = "<group>"; };
+		4D9FB4662081614C004AFCE1 /* multiOptionDialogAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multiOptionDialogAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,12 +143,31 @@
 		4D3A4A9D207D2438000B9336 /* alertGroup */ = {
 			isa = PBXGroup;
 			children = (
-				4D3A4AA4207D7C58000B9336 /* bscButton.swift */,
-				4D3A4AA2207D2AB8000B9336 /* alertTransition.swift */,
+				4D3A8FA82082B6330069D400 /* dialogLib */,
+				4D9FB45B20801793004AFCE1 /* multiDialoglib */,
 				4D3A4AA0207D257F000B9336 /* informationDialog.swift */,
 				4D9FB41F207FD1B4004AFCE1 /* optionDialog.swift */,
+				4D3A8FA620820A140069D400 /* multiOptionDialog.swift */,
 			);
 			path = alertGroup;
+			sourceTree = "<group>";
+		};
+		4D3A8FA82082B6330069D400 /* dialogLib */ = {
+			isa = PBXGroup;
+			children = (
+				4D3A4AA4207D7C58000B9336 /* bscButton.swift */,
+				4D3A4AA2207D2AB8000B9336 /* alertTransition.swift */,
+			);
+			path = dialogLib;
+			sourceTree = "<group>";
+		};
+		4D9FB45B20801793004AFCE1 /* multiDialoglib */ = {
+			isa = PBXGroup;
+			children = (
+				4D9FB460208148E3004AFCE1 /* multiOptionButton.swift */,
+				4D9FB4662081614C004AFCE1 /* multiOptionDialogAction.swift */,
+			);
+			path = multiDialoglib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,10 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3A8FA720820A140069D400 /* multiOptionDialog.swift in Sources */,
 				4D3A4AA3207D2AB8000B9336 /* alertTransition.swift in Sources */,
 				4D3A4AA5207D7C58000B9336 /* bscButton.swift in Sources */,
+				4D9FB461208148E3004AFCE1 /* multiOptionButton.swift in Sources */,
 				4D3A4AA1207D257F000B9336 /* informationDialog.swift in Sources */,
 				4D3A4A70207D00C3000B9336 /* ViewController.swift in Sources */,
+				4D9FB4672081614C004AFCE1 /* multiOptionDialogAction.swift in Sources */,
 				4D9FB420207FD1B4004AFCE1 /* optionDialog.swift in Sources */,
 				4D3A4A6E207D00C3000B9336 /* AppDelegate.swift in Sources */,
 			);

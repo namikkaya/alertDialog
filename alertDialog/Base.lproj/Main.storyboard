@@ -32,13 +32,22 @@
                                     <action selector="openOptionDialog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mex-27-1gv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lg5-uP-NYz">
+                                <rect key="frame" x="147" y="270" width="80" height="30"/>
+                                <state key="normal" title="multiOption"/>
+                                <connections>
+                                    <action selector="multiOptionAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ec9-Wj-BAj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bbY-wL-ciT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="Y8K-cF-Cy6"/>
                             <constraint firstItem="pcu-KD-U9e" firstAttribute="top" secondItem="bbY-wL-ciT" secondAttribute="bottom" constant="68" id="biR-pV-CdP"/>
                             <constraint firstItem="pcu-KD-U9e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h9B-aT-nAv"/>
+                            <constraint firstItem="lg5-uP-NYz" firstAttribute="top" secondItem="pcu-KD-U9e" secondAttribute="bottom" constant="70" id="s08-kg-TCd"/>
                             <constraint firstItem="bbY-wL-ciT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sdL-2f-fJo"/>
+                            <constraint firstItem="lg5-uP-NYz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wrF-S1-v6L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
